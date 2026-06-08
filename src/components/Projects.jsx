@@ -73,32 +73,36 @@ mb-16
 
           <div className="flex gap-4 mt-8">
 
-            <a
-              href="#"
-              className="
-              px-8
-              py-4
-              bg-yellow-400
-              text-black
-              rounded-xl
-              font-semibold
-              "
-            >
-              Live Demo
-            </a>
+           <a
+  href="https://cineflow-green-psi.vercel.app/"
+  target="_blank"
+  rel="noreferrer"
+  className="
+  px-8
+  py-4
+  bg-yellow-400
+  text-black
+  rounded-xl
+  font-semibold
+  "
+>
+  Live Demo
+</a>
 
-            <a
-              href="#"
-              className="
-              px-8
-              py-4
-              border
-              border-yellow-400
-              rounded-xl
-              "
-            >
-              Source Code
-            </a>
+           <a
+  href="https://github.com/gitatharv2003/cineflow"
+  target="_blank"
+  rel="noreferrer"
+  className="
+  px-8
+  py-4
+  border
+  border-yellow-400
+  rounded-xl
+  "
+>
+  Source Code
+</a>
 
           </div>
 
@@ -153,31 +157,35 @@ mb-16
           <div className="flex gap-4 mt-8">
 
             <a
-              href="#"
-              className="
-              px-8
-              py-4
-              bg-yellow-400
-              text-black
-              rounded-xl
-              font-semibold
-              "
-            >
-              Live Demo
-            </a>
+  href="https://gallery-app-kohl-delta.vercel.app/"
+  target="_blank"
+  rel="noreferrer"
+  className="
+  px-8
+  py-4
+  bg-yellow-400
+  text-black
+  rounded-xl
+  font-semibold
+  "
+>
+  Live Demo
+</a>
 
             <a
-              href="#"
-              className="
-              px-8
-              py-4
-              border
-              border-yellow-400
-              rounded-xl
-              "
-            >
-              Source Code
-            </a>
+  href="https://github.com/gitatharv2003/Gallery-app"
+  target="_blank"
+  rel="noreferrer"
+  className="
+  px-8
+  py-4
+  border
+  border-yellow-400
+  rounded-xl
+  "
+>
+  Source Code
+</a>
 
           </div>
 
