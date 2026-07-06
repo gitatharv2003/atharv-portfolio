@@ -9,29 +9,37 @@ import Footer from "./components/Footer";
 
 import ScrollProgress from "./components/ScrollProgress";
 import FloatingBackground from "./components/FloatingBackground";
+import SmoothScroll from "./components/SmoothScroll";
+import CursorAura from "./components/CursorAura";
+import ActionRipple from "./components/ActionRipple";
 
 function App() {
   return (
-    <div className="bg-[#060606] text-white overflow-x-hidden">
+    <div className="relative isolate min-h-screen bg-[#060606] text-white overflow-x-hidden">
 
+      <SmoothScroll />
       <ScrollProgress />
+      <CursorAura />
+      <ActionRipple />
       <FloatingBackground />
 
-      <Navbar />
+      <div className="relative z-10">
+        <Navbar />
 
-      <Hero />
+        <Hero />
 
-      <About />
+        <About />
 
-      <Skills />
+        <Skills />
 
-      <Projects />
+        <Projects />
 
-      <Education />
+        <Education />
 
-      <Contact />
+        <Contact />
 
-      <Footer />
+        <Footer />
+      </div>
 
     </div>
   );

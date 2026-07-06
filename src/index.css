@@ -8,6 +8,7 @@ body {
   background: #060606;
   color: white;
   overflow-x: hidden;
+  cursor: default;
 }
 
 * {
@@ -25,4 +26,22 @@ body {
 
 ::-webkit-scrollbar-track {
   background: #111;
+}
+
+::selection {
+  background: #facc15;
+  color: #050505;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
