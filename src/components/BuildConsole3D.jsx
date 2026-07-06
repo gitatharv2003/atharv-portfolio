@@ -1,4 +1,4 @@
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Float, Grid, Line, MeshDistortMaterial, Sparkles } from "@react-three/drei";
 import { useMemo, useRef } from "react";
 import * as THREE from "three";
@@ -211,6 +211,9 @@ const DataLinks = () => (
 const ConsoleScene = () => {
   const sceneRef = useRef(null);
   const idleAngle = useRef(0);
+  const { size } = useThree();
+  const isCompact = size.width < 420;
+  const sceneScale = isCompact ? 0.82 : size.width < 620 ? 0.92 : 1;
 
   useFrame(({ clock, pointer }, delta) => {
     if (!sceneRef.current) return;
@@ -230,7 +233,7 @@ const ConsoleScene = () => {
       <pointLight position={[2.6, 1.7, 2]} intensity={16} color="#facc15" />
       <pointLight position={[-2.5, -1.5, 1]} intensity={8} color="#a78bfa" />
 
-      <group ref={sceneRef}>
+      <group ref={sceneRef} scale={sceneScale}>
         <Grid
           position={[0, -1.35, -0.35]}
           args={[5.4, 5.4]}

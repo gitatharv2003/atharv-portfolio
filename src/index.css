@@ -2,9 +2,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  min-width: 320px;
   background: #060606;
   color: white;
   overflow-x: hidden;
@@ -13,6 +15,12 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+img,
+canvas,
+svg {
+  max-width: 100%;
 }
 
 ::-webkit-scrollbar {

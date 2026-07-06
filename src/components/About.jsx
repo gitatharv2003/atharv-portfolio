@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="max-w-7xl mx-auto py-32 px-6"
+      className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:py-32"
     >
 
       <motion.div
@@ -21,16 +21,16 @@ const About = () => {
         viewport={{ once: true, amount: 0.35 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       >
-        <p className="text-yellow-300 uppercase tracking-[6px]">
+        <p className="text-sm uppercase tracking-[3px] text-yellow-300 sm:tracking-[6px]">
           About Me
         </p>
 
-        <h2 className="text-5xl md:text-7xl font-black mt-4 leading-tight">
+        <h2 className="mt-4 text-4xl font-black leading-tight sm:text-5xl md:text-7xl">
           Building interfaces that feel engineered,
           cinematic, and unmistakably modern.
         </h2>
 
-        <p className="text-zinc-400 mt-10 max-w-3xl text-lg leading-8">
+        <p className="mt-8 max-w-3xl text-base leading-7 text-zinc-400 sm:mt-10 md:text-lg md:leading-8">
           I'm Atharv Kumar Verma, a B.Tech student focused on premium frontend
           experiences. I turn ideas into responsive web applications with strong
           visual systems, immersive interaction, and production-minded code.
@@ -47,7 +47,7 @@ const About = () => {
             transition={{ duration: 0.7, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
             whileHover={{ y: -8, scale: 1.018, borderColor: "rgba(250,204,21,0.34)" }}
             whileTap={{ scale: 0.98 }}
-            className="group relative overflow-hidden border border-white/10 bg-black/35 p-6 backdrop-blur-xl"
+            className="group relative overflow-hidden border border-white/10 bg-black/35 p-5 backdrop-blur-xl sm:p-6"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-yellow-300/10 via-transparent to-violet-300/10 opacity-0 transition duration-500 group-hover:opacity-100" />
             <motion.div whileHover={{ rotate: 8, scale: 1.12 }} className="relative inline-flex">

@@ -31,16 +31,16 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="max-w-7xl mx-auto py-32 px-6"
+      className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:py-32"
     >
 
-      <div className="mb-16 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+      <div className="mb-10 flex flex-col gap-5 md:mb-16 md:flex-row md:items-end md:justify-between">
         <div>
-        <p className="text-yellow-300 uppercase tracking-[6px]">
+        <p className="text-sm uppercase tracking-[3px] text-yellow-300 sm:tracking-[6px]">
           Featured Work
         </p>
 
-        <h2 className="text-5xl md:text-7xl font-black mt-4">
+        <h2 className="mt-4 text-4xl font-black sm:text-5xl md:text-7xl">
           Projects
         </h2>
         </div>
@@ -71,33 +71,33 @@ const Projects = () => {
               <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-transparent via-violet-200/70 to-transparent" />
             </motion.div>
             <div className="grid lg:grid-cols-[1.25fr_.75fr]">
-              <div className="relative min-h-[280px] overflow-hidden md:min-h-[430px]">
+              <div className="relative min-h-[220px] overflow-hidden sm:min-h-[280px] md:min-h-[430px]">
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.accent} z-10`} />
                 <img
                   src={project.image}
                   alt={project.title}
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                 />
-                <div className="absolute left-5 top-5 z-20 inline-flex items-center gap-2 border border-white/15 bg-black/45 px-4 py-2 text-sm uppercase tracking-[3px] text-zinc-200 backdrop-blur-md">
+                <div className="absolute left-4 top-4 z-20 inline-flex items-center gap-2 border border-white/15 bg-black/45 px-3 py-2 text-xs uppercase tracking-[2px] text-zinc-200 backdrop-blur-md sm:left-5 sm:top-5 sm:px-4 sm:text-sm sm:tracking-[3px]">
                   <Layers3 size={16} />
                   Showcase
                 </div>
               </div>
 
-              <div className="relative flex flex-col justify-between p-7 md:p-10">
+              <div className="relative flex flex-col justify-between p-5 sm:p-7 md:p-10">
                 <div>
                   <div className="mb-6 inline-flex items-center gap-2 text-yellow-300">
                     <Zap size={18} />
-                    <span className="text-sm uppercase tracking-[4px]">
+                    <span className="text-xs uppercase tracking-[2px] sm:text-sm sm:tracking-[4px]">
                       Featured Build
                     </span>
                   </div>
 
-                  <h3 className="text-4xl font-black md:text-5xl">
+                  <h3 className="text-3xl font-black sm:text-4xl md:text-5xl">
                     {project.title}
                   </h3>
 
-                  <p className="mt-5 text-lg leading-8 text-zinc-400">
+                  <p className="mt-5 text-base leading-7 text-zinc-400 md:text-lg md:leading-8">
                     {project.description}
                   </p>
 
@@ -115,14 +115,14 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="mt-9 flex flex-wrap gap-4">
+                <div className="mt-9 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap sm:gap-4">
                   <motion.a
                     href={project.live}
                     target="_blank"
                     rel="noreferrer"
                     whileHover={{ y: -4, scale: 1.03, boxShadow: "0 0 45px rgba(250,204,21,0.24)" }}
                     whileTap={{ scale: 0.94 }}
-                    className="inline-flex items-center gap-2 rounded-md bg-yellow-300 px-6 py-3 font-bold text-black transition duration-300 hover:-translate-y-1 hover:bg-yellow-200"
+                    className="inline-flex items-center justify-center gap-2 rounded-md bg-yellow-300 px-6 py-3 font-bold text-black transition duration-300 hover:-translate-y-1 hover:bg-yellow-200"
                   >
                     <ExternalLink size={18} />
                     Live Demo
@@ -134,7 +134,7 @@ const Projects = () => {
                     rel="noreferrer"
                     whileHover={{ y: -4, scale: 1.03, borderColor: "rgba(216,180,254,0.65)" }}
                     whileTap={{ scale: 0.94 }}
-                    className="inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-violet-300/60 hover:bg-white/10"
+                    className="inline-flex items-center justify-center gap-2 rounded-md border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-violet-300/60 hover:bg-white/10"
                   >
                     <FaGithub size={18} />
                     Source

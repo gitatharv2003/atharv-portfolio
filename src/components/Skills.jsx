@@ -17,13 +17,13 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="max-w-7xl mx-auto py-32 px-6"
+      className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:py-32"
     >
-      <p className="text-yellow-300 uppercase tracking-[6px]">
+      <p className="text-sm uppercase tracking-[3px] text-yellow-300 sm:tracking-[6px]">
         Skills
       </p>
 
-      <h2 className="text-5xl md:text-7xl font-black mt-4 mb-16">
+      <h2 className="mb-10 mt-4 text-4xl font-black sm:text-5xl md:mb-16 md:text-7xl">
         Tech Stack
       </h2>
 
@@ -40,19 +40,19 @@ const Skills = () => {
             transition={{ duration: 0.65, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
             whileHover={{ y: -8, scale: 1.015, borderColor: "rgba(250,204,21,0.38)" }}
             whileTap={{ scale: 0.985 }}
-            className="group relative overflow-hidden border border-white/10 bg-black/40 p-6 backdrop-blur-xl"
+            className="group relative overflow-hidden border border-white/10 bg-black/40 p-5 backdrop-blur-xl sm:p-6"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-yellow-300/10 via-transparent to-violet-300/10 opacity-0 transition duration-500 group-hover:opacity-100" />
 
-            <div className="relative flex justify-between mb-3">
-              <span className="flex items-center gap-3 text-xl font-bold">
+            <div className="relative mb-3 flex items-center justify-between gap-4">
+              <span className="flex min-w-0 items-center gap-3 text-base font-bold sm:text-xl">
                 <motion.span whileHover={{ rotate: 8, scale: 1.12 }}>
                   <Icon className="text-yellow-300" size={28} />
                 </motion.span>
-                {skill.name}
+                <span className="min-w-0 truncate">{skill.name}</span>
               </span>
 
-              <span className="text-yellow-300">
+              <span className="shrink-0 text-yellow-300">
                 {skill.level}
               </span>
             </div>

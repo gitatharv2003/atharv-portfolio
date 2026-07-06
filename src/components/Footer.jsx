@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-white/10 py-10">
 
-      <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-between gap-6 md:flex-row">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 text-center sm:px-6 md:flex-row md:text-left">
 
         <p className="text-zinc-500">
           Designed and built by Atharv Kumar Verma
