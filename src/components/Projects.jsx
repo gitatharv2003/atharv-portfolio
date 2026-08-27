@@ -65,7 +65,7 @@ const Projects = () => {
           >
             <motion.div
               aria-hidden="true"
-              className="absolute inset-0 z-20 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              className="pointer-events-none absolute inset-0 z-20 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
             >
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-yellow-200 to-transparent" />
               <div className="absolute inset-y-0 right-0 w-px bg-gradient-to-b from-transparent via-violet-200/70 to-transparent" />
